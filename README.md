@@ -1,4 +1,4 @@
-# WDS Modelling & Optimization Course
+# Modelling and Optimization of Water Distribution Systems
 
 Notebooks on modelling and optimization of water distribution systems.
 
