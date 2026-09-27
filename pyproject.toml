@@ -11,16 +11,24 @@ dependencies = [
     "numpy",
     "scipy",
     "pandas",
-    "plotly",
+    "matplotlib",
+    "networkx",
+    "wntr",
+]
+
+# Installed by `uv sync` for local use; left out of `pip install` so Colab keeps its own Jupyter.
+[dependency-groups]
+jupyter = [
     "jupyterlab",
     "ipykernel",
 ]
-
-[dependency-groups]
 dev = [
     "ruff",
     "nbstripout",
 ]
+
+[tool.uv]
+default-groups = ["jupyter", "dev"]
 
 [build-system]
 requires = ["hatchling"]
@@ -28,3 +36,6 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/opwater"]
+
+[tool.ruff]
+line-length = 110

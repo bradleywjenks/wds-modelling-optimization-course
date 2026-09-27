@@ -18,6 +18,11 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
+# EPANET temporary files (written by wntr's EpanetSimulator)
+temp.inp
+temp.bin
+temp.rpt
+
 # Testing / tooling caches
 .pytest_cache/
 .ruff_cache/
