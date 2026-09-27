@@ -1,0 +1,30 @@
+[project]
+name = "opwater"
+version = "0.1.0"
+description = "Helper code for teaching notebooks on modelling and optimization of water distribution systems."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Bradley Jenks" }]
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "plotly",
+    "jupyterlab",
+    "ipykernel",
+]
+
+[dependency-groups]
+dev = [
+    "ruff",
+    "nbstripout",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/opwater"]
