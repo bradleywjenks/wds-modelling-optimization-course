@@ -7,17 +7,14 @@ Materials based on module taught by Ivan Stoianov and Aly-Joy Ulusoy at Imperial
 - CIVE70019/70057, Imperial College London
 - CV8100 Directed Studies in Civil Engineering, Toronto Metropolitan University (Fall 2026)
 
-## Local setup
+## Setup
 
-Requires [uv](https://docs.astral.sh/uv/).
+Open a notebook in Google Colab using the badge at its top, or clone the repository and install it in a Python (3.11+) environment:
 
 ```bash
 git clone https://github.com/bradleywjenks/wds-modelling-optimization-course.git
 cd wds-modelling-optimization-course
-uv sync
-uv run jupyter lab
+pip install -e . jupyterlab   # or: uv sync
 ```
 
-In VS Code, open the repository folder and select the `.venv` interpreter as the notebook kernel.
-
-Helper code used across the notebooks lives in the `opwater` package (`src/opwater/`), which is installed into the environment by `uv sync`. Network files and datasets are in `data/`.
+This also installs the `opwater` helper package (`src/opwater/`) used by the notebooks.
