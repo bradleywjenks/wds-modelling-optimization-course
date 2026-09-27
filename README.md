@@ -1,6 +1,6 @@
 # WDS Modelling & Optimization Course
 
-Teaching notebooks on modelling and optimization of water distribution systems — hydraulic analysis, optimization-based model calibration, and operational optimization.
+Notebooks on modelling and optimization of water distribution systems.
 
 ## Local setup
 
