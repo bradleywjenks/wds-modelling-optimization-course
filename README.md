@@ -5,7 +5,7 @@ Notebooks on modelling and optimization of water distribution systems.
 Materials based on module taught by Ivan Stoianov and Aly-Joy Ulusoy at Imperial College London. Used in:
 
 - CIVE70019/70057, Imperial College London
-- CV8100 Directed Studies, Toronto Metropolitan University
+- CV8100 Directed Studies in Civil Engineering, Toronto Metropolitan University (Fall 2026)
 
 ## Local setup
 
