@@ -4,13 +4,18 @@ from pathlib import Path
 
 
 def data_dir():
-    """Return the `data/` folder of the repository containing the current working directory."""
+    """Return the repository's `data/` folder.
+
+    Searches the current working directory and its parents, then the folders above this file
+    (which lie inside the repository when `opwater` is installed in editable mode).
+    """
     cwd = Path.cwd().resolve()
-    for folder in (cwd, *cwd.parents):
+    for folder in (cwd, *cwd.parents, *Path(__file__).resolve().parents):
         if (folder / "data" / "networks").is_dir():
             return folder / "data"
     raise FileNotFoundError(
-        "Could not find the 'data/' folder. Open the notebook from inside the repository."
+        "Could not find the 'data/' folder. Open the notebook from inside the repository, "
+        "or install `opwater` in editable mode (`pip install -e`)."
     )
 
 
