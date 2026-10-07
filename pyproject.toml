@@ -14,6 +14,7 @@ dependencies = [
     "matplotlib",
     "networkx",
     "wntr",
+    "cvxpy",
 ]
 
 # Installed by `uv sync` for local use; left out of `pip install` so Colab keeps its own Jupyter.
