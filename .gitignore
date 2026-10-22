@@ -18,6 +18,9 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
+# Coursework solutions (kept local, not published)
+notebooks/model_calibration_solution.ipynb
+
 # EPANET temporary files (written by wntr's EpanetSimulator)
 temp.inp
 temp.bin
