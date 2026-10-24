@@ -20,6 +20,7 @@ env/
 
 # Coursework solutions (kept local, not published)
 notebooks/model_calibration_solution.ipynb
+notebooks/hydraulic_modelling_solution.ipynb
 
 # EPANET temporary files (written by wntr's EpanetSimulator)
 temp.inp
